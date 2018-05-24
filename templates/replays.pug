@@ -1,0 +1,30 @@
+- var i = 0;
+- var j = 0;
+- var c = 0;
+while i < 3
+  .columns
+    while j < 3
+      - j++;
+      .column
+        .card
+          .card-header
+            .card-header-title Map
+          .card-image
+            .columns.is-gapless.is-marginless.is-mobile.our-team
+              while c < 5
+                .column= c
+                - c++;
+              - c = 0;
+            .columns.is-gapless.is-marginless.is-mobile.enemy-team
+              while c < 5
+                .column= c
+                - c++;
+              - c = 0;
+          .card-content
+            .columns.is-mobile
+              .column Our Team
+              .column Enemy Team
+          .card-footer
+            .card-footer-item Win/Loss
+  - j = 0;
+  - i++;

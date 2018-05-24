@@ -1,0 +1,18 @@
+.section
+  .container
+    if message
+      .notification.is-primary= message
+
+    h1.is-size-1 Upload
+    form(
+      ref="uploadForm"
+      id="uploadForm" 
+      action="/upload" 
+      method="post" 
+      encType="multipart/form-data"
+    )
+      .field
+        label.button(for="replayFile") Choose your replay file
+        input.is-invisible#replayFile(type="file" name="replayFile")
+      .field
+        input.button.is-primary(type="submit" value="Upload!")

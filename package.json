@@ -1,0 +1,18 @@
+{
+  "name": "hots-replay-viewer",
+  "version": "1.0.0",
+  "description": "A tool to view replays",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrea Franchini",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "heroprotocol": "^1.0.1",
+    "pug": "^2.0.3"
+  }
+}

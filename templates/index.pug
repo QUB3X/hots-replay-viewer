@@ -1,0 +1,38 @@
+doctype html
+
+html(lang="en")
+  head
+    meta(charset="utf-8")
+
+    title= title
+    meta(name="description" content="A viewer for HotS replays.")
+    meta(name="author" content="Andrea Franchini")
+    link(rel="stylesheet" href="bulma/bulma.min.css")
+  body
+    // Header
+    .navbar.is-light(role="navigation" aria-label="main navigation")
+      .container
+        .navbar-brand
+          a.navbar-item(href="/") Hots Replay Viewer
+          a.navbar-burger#navbar-burger(role="button" aria-label="menu" aria-expanded="false")
+            span(aria-hidden="true")
+            span(aria-hidden="true")
+            span(aria-hidden="true")
+        .navbar-menu
+          .navbar-end
+            a.navbar-item(href="/register") Register
+            a.navbar-item(href="/login") Login
+            a.navbar-item(href="/upload") Upload
+    // Content
+    case page
+      when 'home'
+        include home.pug
+      when 'upload'
+        include upload.pug
+      when 'register'
+        include register.pug
+      when 'login'
+        include login.pug
+      default
+        include home.pug
+  script(src="js/main.js")
