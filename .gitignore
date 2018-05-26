@@ -61,4 +61,5 @@ typings/
 .data
 
 #replays
-replays/*
+.stormReplay
+.stormreplay
