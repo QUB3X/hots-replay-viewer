@@ -4,11 +4,13 @@
   "description": "A tool to view replays",
   "main": "main.js",
   "scripts": {
+    "start": "node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrea Franchini",
   "license": "MIT",
   "dependencies": {
+    "better-sqlite3": "^4.1.1",
     "bulma": "^0.7.1",
     "express": "^4.16.3",
     "express-fileupload": "^0.4.0",
